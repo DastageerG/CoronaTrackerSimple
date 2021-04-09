@@ -9,8 +9,29 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        >
 
+        <ProgressBar
+            android:id="@+id/progressBarMainActivity"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardViewMainActivityNewDeaths"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/textViewLoadingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading ...."
+            android:textSize="20sp"
+            android:textColor="@color/design_default_color_primary"
+            android:layout_below="@id/progressBarMainActivity"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            />
         <TextView
             android:id="@+id/texViewGlobalReport"
             android:layout_width="match_parent"
@@ -293,6 +314,7 @@
                     android:text="333333333"
                     android:textColor="@color/teal_700"
                     android:textSize="18sp" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
